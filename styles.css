@@ -1,0 +1,1377 @@
+/* ****** scrollbar design ******** */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #bfbfbf;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff8243;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f16620;
+}
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header styles */
+header {
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+.sticky{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#ffffff;
+    box-shadow: 0 2px 5px rgb(255, 136, 0);
+    z-index:9999;
+    transition:all 1.5s ease;
+    }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+.logo span{
+color:orange;
+font-weight: bolder;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    transition: 0.9ms;
+}
+/* nav ul li a:hover{
+color:#ff7b00;
+} */
+.nav-link:hover {
+    color: #ff7b00;
+    border-bottom: 2px solid #ff7b00;
+  }
+  
+  .nav-link.active {
+    color:  #ff7b00;
+    border-bottom: 2px solid #ff7b00;
+  }
+
+nav .nav-item{
+margin-bottom:0;
+}
+/* Hero section styles */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 5%;
+    background-color: #f8f8f8;
+}
+#home #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 73%;
+    width: 100%;
+  }
+
+.hero-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    color: #333;
+}
+.hero-content h6{
+color:#ff8800;
+margin-left:3px;
+}
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #000000;
+}
+
+.cta-button{
+    min-width: 120px;
+    min-height: 58px;
+    background: #ff7b00;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration:none;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    outline: none !important;
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    padding: 6px 30px;
+}
+
+.cta-button:hover {
+    background-color: #ff9900;
+    color: #ffffff;
+}
+
+.banner-img-wp {
+    width: 100%;
+    height: 100%;
+    padding-top: 50PX;
+    padding-left: 120px;
+}
+
+.banner-img {
+    width: 30rem;
+    height: 30rem;
+    background-size: cover;
+    background-position: center;
+    animation: biani 4.5s linear infinite alternate;
+    box-shadow: 0 2px 5px rgb(255, 136, 0);
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes biani {
+    0% {
+        border-radius: 48% 52% 57% 43% / 34% 44% 56% 66%;
+    }
+    25% {
+        border-radius: 62% 38% 64% 36% / 34% 55% 45% 66%;
+    }
+    50% {
+        border-radius: 43% 57% 51% 49% / 33% 42% 58% 67%;
+    }
+    100% {
+        border-radius: 40% 60% 43% 57% / 52% 32% 68% 48%;
+    }
+}
+/*-----------------------------------*\
+  #ABOUT
+\*-----------------------------------*/
+.section-about .container{
+justify-content: space-between;
+/* display:inline-block; */
+}
+.section-about .about-banner img{
+width:110%;
+height: 100%;
+padding-top:30%;
+}
+.section-about .about-content{
+margin-left:20%;
+padding-top:20%;
+}
+.section-about .about-content h6{
+color:#ff8800;
+}
+.section-about .about-content h1{
+font-weight: bold;
+}
+.section-about .about-content h5{
+padding-top:10px;
+line-height:25px;
+}
+.section-about .about-content p{
+padding-top:10px;
+}
+.section-about .about-content .ab-btn{
+margin-top:10px;
+}
+.section-about .col-lg-5 .span{
+font-size:2rem;
+font-weight:700;
+padding-left:2rem;
+}
+
+/*-----------------------------------*\
+  #Features
+\*-----------------------------------*/
+.feature_section .features-content h6{
+color:#ff8800;
+padding-top:8rem;
+}
+.feature_section .features-content h1{
+font-weight: bold;
+font-size:200%;
+}
+.feature_section .b1{
+background-color:transparent;
+border-radius:50%;
+border:0.2rem solid #C68642;
+padding: 5px;
+display:inline-block;
+}
+.feature_section .b2{
+background-color:transparent;
+border-radius:50%;
+border:0.2rem solid #BE29EC;
+padding: 5px;
+display:inline-block;
+}
+.feature_section .b3{
+background-color:transparent;
+border-radius:50%;
+border:0.2rem solid #00b4d8;
+padding: 5px;
+display:inline-block;
+}
+.feature_section .b4{
+background-color:transparent;
+border-radius:50%;
+border:0.2rem solid #FB6F92;
+padding: 5px;
+display:inline-block;
+}
+.feature_section .features-box .s1{
+height:3rem;
+width:3rem;
+background-color:#F1C27D;
+margin:auto;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+position: relative;
+z-index:-9999;
+}
+.feature_section .features-box .s2{
+height:3rem;
+width:3rem;
+background-color:#EFBBFF;
+margin:auto;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+position: relative;
+z-index:-9999;
+}
+.feature_section .features-box .s3{
+height:3rem;
+width:3rem;
+background-color:#CAF0F8;
+margin:auto;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+position: relative;
+z-index:-9999;
+}
+.feature_section .features-box .s4{
+height:3rem;
+width:3rem;
+background-color:#FFC2D2;
+margin:auto;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+position: relative;
+z-index:-9999;
+}
+.feature_section .features-box{
+background-color:transparent;
+border:0.15rem solid orange;
+padding:2rem 0.6rem;
+transition:all 0.3s;
+}
+.feature_section .features-text h3{
+padding-top:20px;
+padding-bottom:10px;
+}
+.feature_section .features-box .features-icon .square{
+width:2rem;
+height:2rem;
+}
+.feature_section .features-box .features-icon .two{
+width:1.8rem;
+height:1.8rem;
+}
+.feature_section .features-box .features-icon .lock{
+width:2rem;
+height:2rem;
+}
+.feature_section .features-box .features-icon .headphone{
+width:2rem;
+height:2rem;
+}
+.feature_section .c1:hover{
+background-color:#F1C27D;
+border-color:#C68642;
+position: relative;
+z-index:1;
+-webkit-text-fill-color:#8D5524;
+}
+.feature_section .c2:hover{
+background-color:#EFBBFF;
+border-color:#BE29EC;
+position: relative;
+z-index:1;
+-webkit-text-fill-color:#800080;
+}
+.feature_section .c3:hover{
+background-color:#CAF0F8;
+border-color:#00b4d8;
+position: relative;
+z-index:1;
+-webkit-text-fill-color:#005B96;
+}
+.feature_section .c4:hover{
+background-color:#FFC2D2;
+border-color:#FB6F92;
+position: relative;
+z-index:1;
+-webkit-text-fill-color:#FB6F92;
+}
+/* Projects */
+.project-sec .section_header h6{
+color:#ff8800;
+padding-top:8rem;
+}
+.project-sec .section_header h1{
+font-weight: bold;
+font-size:200%;
+}
+.project-sec .project-img img{
+width:100%;
+height:100%;
+margin-left:50px;
+}
+.project-sec .project-content h6{
+color:#ff8800;
+font-size: large;
+}
+.project-sec .project-content h1{
+font-weight: bold;
+font-size:230%;
+}
+.project-sec .project-content p{
+padding-top:10px;
+}
+.project-sec .project-content .class_btn{
+text-decoration:none;
+color: #000000;
+}
+.project-sec .project-content .class_btn:hover{
+color: #ff8800;
+transition: 0.3s; 
+}
+.project-sec .project-content .class_btn .arrow-forward{
+position: relative;
+top: 4px;
+align-items:center !important;
+justify-content: space-between !important;
+}
+.project-sec .project-content .class_btn2{
+text-decoration:none;
+color:#ff8800;
+}
+.project-sec .project-content .class_btn2:hover{
+color:  #000000;
+transition:all 1s ease-in-out; 
+}
+.project-sec .project-content .class_btn2 .arrow-forward{
+position: relative;
+top: 4px;
+align-items:center !important;
+justify-content: space-between !important;
+}
+.project-sec .project-content .class_btn2:hover .arrow-forward{
+transform:translateX(10px);
+transition: all 1s ease-in-out;
+}
+.project-sec .project-content .class_btn:hover .arrow-forward{
+transform:translateX(10px);
+transition: all 1s ease-in-out;
+}
+/* Counter section styles */
+.counter_area{
+display: flex;
+justify-content: space-around;
+padding: 3rem 5%;
+background-color: #152b45;
+color: #fff;
+}
+.counter_area .counter_item .counter{
+font-size: 3rem;
+}
+.counter_area .single_counter .counter-img1{
+width:4rem;
+height:4rem;
+margin-left:2.4rem;
+}
+.counter_area .single_counter .counter-img2{
+width:4rem;
+height:4rem;
+margin-left:3rem;
+}
+.counter_area .single_counter .counter-img3{
+width:4rem;
+height:4rem;
+margin-left:2rem;
+}
+.counter_area .single_counter .counter-img4{
+width:3rem;
+height:3rem;
+margin-left:4rem;
+margin-top:16px;
+}
+/* testimonial */
+.testimonial-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 64px 16px;
+}
+.testimonial-section .testimonial_text h6{
+color:#ff8800;
+padding-top:8rem;
+}
+.testimonial-section .testimonial_text h1{
+font-weight: bold;
+font-size:200%;
+padding-bottom:3rem;
+}
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.testimonial-video {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f97316;
+    cursor: pointer;
+}
+
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.client-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.orange-line {
+    width: 32px;
+    height: 2px;
+    background-color: #f97316;
+    margin-left: 8px;
+}
+
+.testimonial-text {
+    text-align: center;
+    color: #4b5563;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.client-name {
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-bottom: 4px;
+}
+
+.company-logo {
+    width: 100px;
+    height: auto;
+}
+@media (min-width: 768px) {
+    .testimonial-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .testimonial-video {
+        width: 50%;
+    }
+
+    .testimonial-content {
+        width: 50%;
+        align-items: flex-start;
+    }
+
+    .testimonial-text {
+        text-align: left;
+    }
+}
+
+
+
+.team-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.team-section .team-text h6{
+color:#ff8800;
+padding-top:8rem;
+}
+.team-section .team-text h1{
+font-weight: bold;
+font-size:200%;
+padding-bottom:3rem;
+}
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: #fff;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0px 10px rgb(255, 136, 0);
+}
+
+.image-container {
+    padding: 15px 15px 0;
+}
+
+.member-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+box-shadow: 0 2px 5px rgb(255, 136, 0);
+}
+
+.member-name {
+    color: #333;
+    font-size: 20px;
+    margin: 20px 0 5px;
+    font-weight: 700;
+}
+
+.member-name2{
+    color: #333;
+    font-size: 20px;
+    margin: 20px 0 5px;
+    font-weight: 700;
+    color:#ff8800;
+}
+.team-member:hover .member-name2{
+color: #333;
+transition: all 0.8ms ease-in;
+}
+.team-member:hover .member-name{
+color:#ff8800;
+transition: all 0.8ms ease-in;
+}
+.member-role {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.member-bio {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 20px;
+}
+
+.social-icon {
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff6b6b;
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Blog */
+.hover\:underline {
+    display: inline;
+    background-image: linear-gradient(to right, hsl(217, 21%, 16%), hsl(217, 21%, 16%));
+    background-repeat: no-repeat;
+    max-width: max-content;
+    background-position-y:center;
+    background-size: 0 2px;
+    transition:  0.5s ease;
+  }
+  
+  .hover\:underline:is(:hover, :focus) { background-size: 100% 2px; }
+.blog-heading h6{
+color:#ff8800;
+padding-top:8rem;
+}
+.blog-heading h1{
+font-weight: bold;
+font-size:200%;
+padding-bottom:3rem;
+}
+#blog{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.blog-container{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 20px 0px;
+}
+.blog-box{
+width:350px;
+background-color:#fff;
+border: 1px solid #ececec;
+margin:20px;
+}
+.blog-img{
+width:100%;
+height: auto;
+}
+.blog-img:hover{
+transform: scale(1.1);
+transition: all ease 0.3s;
+}
+.blog-img img{
+width:100%;
+height:100%;
+object-fit:cover;
+object-position:center;
+}
+.blog-text{
+padding:30px;
+display:flex;
+flex-direction: column;
+}
+.blog-text span{
+color:#666;
+font-size:0.9rem;
+}
+.blog-text .blog-title{
+font-size:1.3rem;
+font-weight:bold;
+color: #272727;
+text-decoration: none;
+padding-top:10px;
+}
+.blog-text .wrapper .icon{
+color: #ff7b00;
+position: relative;
+top:3px;
+}
+.blog-text .wrapper{
+padding-top:20px;
+justify-content: space-between;
+}
+.blog-text .wrapper span{
+font-weight: bold;
+margin-left:2px;
+}
+.blog-text .wrapper .icon2{
+color: #ff7b00;
+position: relative;
+top:3px;
+padding-left:15px;
+}
+/* line 2, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+.footer-area {
+    background-color: #162b45;
+    padding: 130px 0px 20px;
+  }
+  
+  @media (max-width: 991px) {
+    /* line 2, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer-area {
+      padding: 70px 0px 30px;
+    }
+  }
+  
+  /* line 8, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .col-lg-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+  }
+  
+  @media (max-width: 991px) {
+    /* line 13, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer-area .single-footer-widget {
+      margin-bottom: 30px;
+    }
+  }
+  
+  /* line 18, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .single-footer-widget p {
+    color: #999999;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+  .footer-area .single-footer-widget .logo{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #FFF;
+        padding-bottom:20px;
+  }
+  .footer-area .single-footer-widget .logo .span{
+    color:orange;
+    font-weight: bolder;
+  }
+  /* line 24, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .single-footer-widget h4 {
+    margin-bottom: 23px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  @media (max-width: 1024px) {
+    /* line 24, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer-area .single-footer-widget h4 {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    /* line 24, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer-area .single-footer-widget h4 {
+      margin-bottom: 15px;
+    }
+  }
+  
+  /* line 37, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .single-footer-widget ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* line 39, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .single-footer-widget ul li a {
+    color: #999;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  .footer-area .single-footer-widget ul li{
+list-style: none;
+  }
+  .footer-area .single-footer-widget ul{
+padding-left:0;
+  }
+  /* line 43, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .single-footer-widget ul li a:hover {
+    color: #ff7b00;
+  }
+  
+  /* line 49, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .single-footer-widget .form-wrap {
+    margin-top: 25px;
+  }
+  
+  /* line 52, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .single-footer-widget input {
+    height: 40px;
+    border: none;
+    width: 67% !important;
+    font-weight: 400;
+    padding-left: 20px;
+    border-radius: 0;
+    font-size: 13px;
+    color: #999999;
+    border: 0px solid transparent;
+    font-family: "Cardo", serif;
+  }
+  
+  /* line 63, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .single-footer-widget input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  /* line 68, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .single-footer-widget .click-btn {
+    background-color: #ab7636;
+    color: #fff;
+    border-radius: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 8px 20px;
+    border: 0;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Cardo", serif;
+    position: relative;
+    left: 0;
+  }
+  
+  /* line 81, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .single-footer-widget .click-btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  @media (max-width: 375px) {
+    /* line 68, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer-area .single-footer-widget .click-btn {
+      margin-top: 10px;
+    }
+  }
+  
+  @media (min-width: 400px) {
+    /* line 68, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer-area .single-footer-widget .click-btn {
+      left: -50px;
+    }
+  }
+  
+  /* line 96, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .footer_1 img {
+    margin-bottom: 35px;
+  }
+  
+  @media (max-width: 575px) {
+    /* line 96, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer-area .footer_1 img {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 96, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer-area .footer_1 img {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 96, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer-area .footer_1 img {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* line 111, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .footer_1 p {
+    margin-bottom: 15px;
+  }
+  
+  /* line 115, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .social_icon {
+    margin-top: 27px;
+  }
+  
+  /* line 117, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .social_icon {
+    color: #ffffff;
+    font-size: 15px;
+    margin-right: 20px;
+  }
+  .footer-area .social_icon .i1{
+padding-left:30px;
+  }
+  /* line 121, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .social_icon .i2:hover {
+    color: #ff7b00;
+    transition: all ease 0.5s;
+  }
+  
+  /* line 129, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .footer_3 .footer_img .single_footer_img {
+    width: 26%;
+    float: left;
+    padding-bottom:10px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 129, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer-area .footer_3 .footer_img .single_footer_img {
+      width: 25%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 129, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer-area .footer_3 .footer_img .single_footer_img {
+      width: 20%;
+    }
+  }
+  
+  @media only screen and (min-width: 991px) and (max-width: 1200px) {
+    /* line 129, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer-area .footer_3 .footer_img .single_footer_img {
+      width: 20%;
+    }
+  }
+  
+  /* line 146, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .footer_3 .footer_img .single_footer_img:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    background-color: #000;
+    width: 92%;
+    height: 90%;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  /* line 157, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .footer_3 .footer_img .single_footer_img .i {
+    text-align: center;
+    position: absolute;
+    top: 41%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    color: #fff;
+    z-index: 2;
+    opacity: 0;
+  }
+  
+  /* line 169, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .footer_3 .footer_img .single_footer_img:hover:after {
+    opacity: 0.5;
+  }
+  
+  /* line 172, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .footer_3 .footer_img .single_footer_img:hover .i {
+    opacity: 1;
+  }
+  
+  /* line 179, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .contact_info {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  /* line 182, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .contact_info:last-child {
+    margin-bottom: 0px;
+  }
+  
+  /* line 185, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .contact_info p {
+    margin-bottom: 10px;
+  }
+  
+  /* line 187, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .contact_info p span {
+    color: #2c3033;
+    font-size: 16px;
+  }
+  
+  /* line 193, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .btn {
+    background-color: #ab7636;
+    color: #fff;
+    width: 49px;
+    border-radius: 0px;
+    height: 40px;
+  }
+  
+  /* line 200, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area span.ti-heart {
+    font-size: 12px;
+    margin: 0px 2px;
+  }
+  
+  /* line 204, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .copyright_part_text {
+    border-top: 1px solid #45556a;
+    padding-top: 20px;
+    margin-top: 95px;
+  }
+  
+  /* line 208, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .copyright_part_text p {
+    color: #777777;
+    text-align: left;
+  }
+  
+  @media (max-width: 575px) {
+    /* line 204, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer-area .copyright_part_text {
+      margin-top: 20px;
+    }
+    /* line 214, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer-area .copyright_part_text p {
+      font-size: 13px;
+    }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 204, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer-area .copyright_part_text {
+      text-align: center;
+      margin-top: 20px;
+    }
+    /* line 221, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer-area .copyright_part_text p {
+      font-size: 13px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 226, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer-area .copyright_part_text p {
+      text-align: center;
+    }
+  }
+  
+  /* line 234, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .copyright_part_text a {
+    color: #ff7b00;
+  }
+  
+  /* line 238, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .input-group {
+    border: 1px solid #45556a;
+    padding: 5px;
+  }
+  
+  /* line 243, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .footer_icon p {
+    margin-bottom: 22px;
+  }
+  
+  /* line 247, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .footer_icon ul li {
+    margin-bottom: 20px;
+  }
+  
+  /* line 249, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer-area .footer_icon .i3 {
+    margin-right: 15px;
+  }
+  
+  /* line 256, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer_menu {
+    float: right;
+  }
+  
+  @media (max-width: 575px) {
+    /* line 256, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer_menu {
+      float: none;
+      text-align: center;
+      margin-top: 15px;
+    }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 256, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer_menu {
+      float: none;
+      text-align: center;
+      margin-top: 15px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 256, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer_menu {
+      float: none;
+      text-align: center;
+      margin-top: 15px;
+    }
+  }
+  
+  /* line 274, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer_menu ul li {
+    display: inline-block;
+  }
+  
+  /* line 276, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer_menu ul li a {
+    color: #999999 !important;
+    padding: 0px 15px;
+    text-decoration: none;
+  }
+  
+  /* line 279, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+  .footer_menu ul li a:hover {
+    color: #ff7b00 !important;
+  }
+  
+  @media (max-width: 575px) {
+    /* line 276, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer_menu ul li a {
+      padding: 0px 15px;
+    }
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* line 276, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer_menu ul li a {
+      padding: 0px 15px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* line 276, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer_menu ul li a {
+      padding: 0px 15px;
+    }
+  }
+  
+  @media only screen and (min-width: 991px) and (max-width: 1200px) {
+    /* line 276, ../../01 cl html template/New folder/May 2019/174 Ariclaw Lawyer/Ariclaw Lawyer Html/sass/_footer.scss */
+    .footer_menu ul li a {
+      padding: 0px 15px;
+    }
+  }
+  /* scroll top starts */
+#scroll-top {
+  position: fixed;
+  top: -140%;
+  right: 1rem;
+  padding: 0rem 0.5rem;
+  font-size: 2rem;
+  background: #fff;
+  box-shadow: 0 2px 10px rgb(255, 136, 0);
+  align-items:center;
+  justify-content:center;
+  color: #ff7b00;
+  border-radius: 50%;
+  transition: 1s linear;
+  z-index: 1000;
+}
+#scroll-top:hover{
+color: #000;
+background-color:#ff9900;
+box-shadow: none;
+}
+#scroll-top.active {
+  top: calc(100% - 4rem);
+}
+/* scroll top ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
